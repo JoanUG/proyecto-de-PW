@@ -1,0 +1,66 @@
+/* Estilos adicionales para el dashboard */
+
+/* Ajustes para el sidebar */
+.sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+/* Mejoras en las tarjetas */
+.card-unah {
+    transition: transform 0.2s;
+}
+
+.card-unah:hover {
+    transform: translateY(-2px);
+}
+
+/* Estilos para las tablas */
+.table-unah th {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+}
+
+/* Mejoras en los botones */
+.btn-unah {
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+/* Ajustes en los formularios */
+.form-control:focus, .form-select:focus {
+    border-color: #8bc34a;
+    box-shadow: 0 0 0 0.25rem rgba(139, 195, 74, 0.25);
+}
+
+/* Estilos para los badges */
+.badge {
+    font-weight: 500;
+    padding: 0.35em 0.65em;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .sidebar {
+        height: auto;
+        position: relative;
+    }
+    
+    .main-content {
+        padding: 15px;
+    }
+}
